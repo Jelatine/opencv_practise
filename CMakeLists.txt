@@ -4,3 +4,6 @@ find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable( DisplayImage main.cpp )
 target_link_libraries( DisplayImage ${OpenCV_LIBS} )
+
+add_executable( chapter1_demo chapter1_demo.cpp )
+target_link_libraries( chapter1_demo ${OpenCV_LIBS} )
