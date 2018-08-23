@@ -2,7 +2,7 @@
 #include "opencv2/imgproc/imgproc.hpp"
 using namespace cv;
 int main(){
-    Mat srcImage=imread("lena.jpg");
+    Mat srcImage=imread("/home/lee/cv_data/lena.jpg");
     imshow("source image",srcImage);
     //erode
     Mat element=getStructuringElement(MORPH_RECT,Size(15,15));
